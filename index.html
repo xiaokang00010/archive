@@ -8,14 +8,14 @@
           var cxt=c.getContext("2d");
           cxt.fillStyle="#FF0000";
           cxt.fillRect(0,0,1024,768);
-	  ctx.fillRect(10,10,100,100);
+	  ctx.moveTo(10,10);
           for (var i = 0; i < 5; i++) {   
            cxt.lineTo(Math.cos((18+i*72)/180*Math.PI)*200+100,   
                         -Math.sin((18+i*72)/180*Math.PI)*200+100);   
            cxt.lineTo(Math.cos((54+i*72)/180*Math.PI)*80+100,   
                         -Math.sin((54+i*72)/180*Math.PI)*80+100);   
          }  
-	 
+	 	  ctx.fillRect(10,10,100,100);
 	 cxt.lineWidth="3";
 	 cxt.fillStyle = "#F6F152";
 	 cxt.strokeStyle = "#F5270B";
