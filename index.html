@@ -8,7 +8,7 @@
           var cxt=c.getContext("2d");
           cxt.fillStyle="#FF0000";
           cxt.fillRect(0,0,1024,768);
-	  cxt.moveTo(10,10);
+	  context.beginPath(); 
           for (var i = 0; i < 5; i++) {   
            cxt.lineTo(Math.cos((18+i*72)/180*Math.PI)*200+200,   
                         -Math.sin((18+i*72)/180*Math.PI)*200+200);   
