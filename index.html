@@ -5,9 +5,20 @@
     <canvas id="MyPicture" width="1024" height="768"></canvas>
 	<script type="text/javascript">
 	  var c=document.getElementById("MyPicture");
-      var cxt=c.getContext("2d");
-      cxt.fillStyle="#FF0000";
-      cxt.fillRect(0,0,1024,768);
+          var cxt=c.getContext("2d");
+          cxt.fillStyle="#FF0000";
+          cxt.fillRect(0,0,1024,768);
+          for (var i = 0; i < 5; i++) {   
+            cxt.lineTo(Math.cos((18+i*72)/180*Math.PI)*200+200,   
+                        -Math.sin((18+i*72)/180*Math.PI)*200+200);   
+            cxt.lineTo(Math.cos((54+i*72)/180*Math.PI)*80+200,   
+                        -Math.sin((54+i*72)/180*Math.PI)*80+200);   
+         }   
+	 cxt.closePath();
+	 cxt.lineWidth="3";
+	 cxt.fillStyle = "#F6F152";
+	 cxt.strokeStyle = "#F5270B";
+	 cxt.fill();
 	</script>
   
 </body></html>
